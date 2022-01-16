@@ -71,10 +71,11 @@ nav a:hover {
 
 #main-container {
   font-size: 28px;
-  /* padding: 100px 10px; */
+  margin-left: 320px;
+  /* padding: 0px 10px; */
 
   /* position: relative; */
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   scroll-behavior: smooth;
   overflow: auto;
@@ -84,8 +85,8 @@ nav a:hover {
 
 .main-section {
   width: 100%;
-  height: 100vh;
-  padding-left: 200px;
+  height: auto;
+  min-height: 100vh;
   background-size: cover;
   scroll-snap-align: start;
 }
