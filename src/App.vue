@@ -40,7 +40,7 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  /* max-width: 1500px; */
 }
 
 nav {
@@ -61,8 +61,7 @@ nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #ff9966;
-  display: block;
+  color: hsl(20, 100%, 70%);
 }
 
 nav a:hover {
@@ -71,11 +70,11 @@ nav a:hover {
 
 #main-container {
   font-size: 28px;
-  margin-left: 320px;
   /* padding: 0px 10px; */
 
   /* position: relative; */
   /* width: 100%; */
+  max-width: 30em;
   height: 100vh;
   scroll-behavior: smooth;
   overflow: auto;
@@ -89,6 +88,7 @@ nav a:hover {
   min-height: 100vh;
   background-size: cover;
   scroll-snap-align: start;
+  padding-top: 20%;
 }
 
 .main-section:nth-child(1) {
@@ -100,28 +100,76 @@ nav a:hover {
 }
 
 .main-section:nth-child(3) {
-  /* background: mediumaquamarine; */
   background: black;
   color: white;
 }
 
-@media only screen and (min-width: 601px) {
+/* @media only screen and (min-width: 1200px) {
+  html,
+  body {
+    padding-left: 10%;
+  }
+} */
+
+@media only screen and (min-width: 901px) {
   nav {
     width: 200px;
   }
 
-  #nav-menu {
-    visibility: visible;
+  nav a {
+    display: block;
+  }
+
+  #main-container {
+    margin-left: 320px;
+  }
+
+  .main-section {
+    padding-top: 5em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    width: 350px;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+  #main-container {
+    padding-left: 70px;
+    margin-left: 0px;
+  }
+
+  .main-section {
+    padding-top: 7em;
   }
 }
 
 @media only screen and (max-width: 600px) {
   nav {
-    width: 100%;
+    top: 15px;
+    left: 15px;
+    padding: 4px 13px;
+    width: 300px;
   }
 
-  #nav-menu {
-    visibility: collapse;
+  nav a {
+    font-size: 1.3em;
   }
+
+  #main-container {
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+
+  .main-section {
+    padding-top: 5em;
+  }
+
+  
+
 }
 </style>
