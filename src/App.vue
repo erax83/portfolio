@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <nav>
       <div id="portfolio-heading">
         <h1>PORTFOLIO</h1>
@@ -31,13 +31,30 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
 html,
 body {
   max-width: 100%;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Ubuntu Mono', monospace; */
+  /* font-family: 'Dongle', sans-serif; */
+  /* font-family: 'Share Tech Mono', monospace; */
+  /* font-family: 'Cousine', monospace; */
+  font-family: 'Overpass Mono', monospace;
+  /* font-family: 'Spinnaker', sans-serif; */
+  font-family: 'Fira Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* max-width: 1500px; */
@@ -78,7 +95,8 @@ nav a:hover {
   height: 100vh;
   scroll-behavior: smooth;
   overflow: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
+  scroll-margin: 50px 0 50px 0;
   /* padding-left: 10em; */
 }
 
@@ -131,7 +149,7 @@ nav a:hover {
 
 @media only screen and (max-width: 900px) {
   nav {
-    width: 350px;
+    width: 380px;
   }
 
   nav a {
@@ -153,7 +171,7 @@ nav a:hover {
     top: 15px;
     left: 15px;
     padding: 4px 13px;
-    width: 300px;
+    width: 330px;
   }
 
   nav a {
@@ -168,8 +186,5 @@ nav a:hover {
   .main-section {
     padding-top: 5em;
   }
-
-  
-
 }
 </style>
