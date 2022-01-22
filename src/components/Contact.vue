@@ -11,4 +11,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.contact-component {
+  color: hsl(20, 100%, 70%);
+}
+</style>

@@ -1,9 +1,26 @@
 <template>
-  <div id="app" >
+  <div id="app">
     <nav>
       <div id="portfolio-heading">
         <h1>PORTFOLIO</h1>
         <h2>Erik Axelsson</h2>
+        
+      </div>
+      <div>
+        <img
+          class="flag"
+          id="swedish-flag"
+          v-on:click="languageToSwedish"
+          src="@/assets/sweden.png"
+          alt="swedish flag"
+        />
+        <img
+          class="flag"
+          id="brittish-flag"
+          v-on:click="languageToEnglish"
+          src="@/assets/united-kingdom.png"
+          alt="british flag"
+        />
       </div>
       <div id="nav-menu">
         <a href="#about-me">Om mig</a>
@@ -27,37 +44,70 @@ import Contact from "@/components/Contact.vue";
 export default {
   name: "App",
   components: { About, Projects, Contact },
+  
+  methods: {
+    languageToSwedish: function () {
+      if (this.$store.state.swedish == false) {
+        this.$store.commit("changeLanguage");
+        document.getElementById("swedish-flag").style.filter = "brightness(100%)";
+        document.getElementById("brittish-flag").style.filter = "brightness(50%)";
+      }
+      console.log(this.$store.state.swedish);
+    },
+    languageToEnglish: function () {
+      if (this.$store.state.swedish == true) {
+        this.$store.commit("changeLanguage");
+        document.getElementById("brittish-flag").style.filter = "brightness(100%)";
+        document.getElementById("swedish-flag").style.filter = "brightness(50%)";
+      }
+      console.log(this.$store.state.swedish);
+    },
+  },
 };
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 
 html,
 body {
   max-width: 100%;
+  background: black;
 }
 
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   /* font-family: 'Ubuntu Mono', monospace; */
   /* font-family: 'Dongle', sans-serif; */
   /* font-family: 'Share Tech Mono', monospace; */
   /* font-family: 'Cousine', monospace; */
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   /* font-family: 'Spinnaker', sans-serif; */
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* max-width: 1500px; */
+}
+
+.flag {
+  width: 20px;
+  padding: 0.4em;
+}
+
+#swedish-flag {
+  filter: brightness(100%);
+}
+
+#brittish-flag {
+  filter: brightness(50%);
 }
 
 nav {

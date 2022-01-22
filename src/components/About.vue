@@ -1,6 +1,7 @@
 <template>
   <div class="about-component">
-    <h1>Om mig</h1>
+    <h1 class="lang-swe" v-if="this.$store.state.swedish == true">Om mig</h1>
+    <h1 class="lang-eng" v-if="this.$store.state.swedish == false">About me</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio, nihil
       voluptatum maxime nam a officiis officia minus cumque ab enim neque
