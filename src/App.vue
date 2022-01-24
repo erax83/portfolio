@@ -92,6 +92,22 @@ body {
   background: white;
 }
 
+main h1 {
+  font-size: 2em;
+}
+
+main h2 {
+  font-size: 0.8em;
+}
+
+main p {
+  line-height: 1.7em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Source Sans Pro", sans-serif;
@@ -204,12 +220,14 @@ nav a:hover {
   }
 
   .main-section {
-    padding-top: 5em;
+    padding-top: 4em;
   }
 }
 
 @media only screen and (max-width: 900px) {
   nav {
+    top: 20px;
+    left: 20px;
     width: 420px;
   }
 
@@ -223,7 +241,7 @@ nav a:hover {
   }
 
   .main-section {
-    padding-top: 7em;
+    padding-top: 6.5em;
   }
 
   #flags {
@@ -245,6 +263,14 @@ nav a:hover {
 
   nav a {
     font-size: 1.3em;
+  }
+
+  main h1 {
+    font-size: 1.6em;
+  }
+
+  main p {
+    font-size: 0.7em;;
   }
 
   #main-container {

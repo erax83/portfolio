@@ -1,7 +1,7 @@
 <template>
   <div class="project-component">
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
-      <h1>Projekt SVENSKA</h1>
+      <h1>Projekt</h1>
       <div>
         <h2>Portfolio</h2>
         <p>
@@ -14,6 +14,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
           ratione.
         </p>
+        <p>Länk: www...</p>
       </div>
       <div>
         <h2>???</h2>
@@ -21,10 +22,11 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
           enim?
         </p>
+        <p>Länk: www...</p>
       </div>
     </div>
     <div class="lang-eng" v-if="this.$store.state.swedish == false">
-      <h1>Projects ENGLISH</h1>
+      <h1>Projects</h1>
       <div>
         <h2>Portfolio</h2>
         <p>

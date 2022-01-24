@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style scoped>
+/* h1 {
+  font-size: 5em;;
+} */
+ 
 #name-and-pic {
   line-height: 0em;
 }
