@@ -1,7 +1,25 @@
 <template>
   <div class="contact-component">
-    <h1>Kontakt</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur libero doloribus quos placeat a asperiores repellendus quia, eos nulla quidem. Delectus culpa, ducimus sapiente ipsa, ratione dignissimos quam nisi, temporibus velit qui officia? Quia explicabo, aliquam harum provident dolorum, minima quam quidem cum commodi et vero rem unde perspiciatis alias minus quas neque quisquam repellendus, animi quaerat esse voluptas deserunt! Ipsa, exercitationem! Voluptas sunt nam esse optio nihil deserunt et iusto eaque, repudiandae minima eius, cum sint totam maiores corrupti nostrum sed. Iure nisi commodi explicabo cum natus temporibus fugit, libero mollitia. Ex voluptates quidem ducimus iusto, corrupti explicabo.</p>
+    <div class="lang-swe" v-if="this.$store.state.swedish == true">
+      <h1>Kontakt</h1>
+      <p>Mobiltelefon: 073 - 951 78 83</p>
+      <p>E-post: e.axelsson@tutanota.com</p>
+      <p>linkedIn: ...</p>
+      <br />
+      <p>Adress:</p>
+      <p>Östra Madvägen 15</p>
+      <p>226 50 Lund</p>
+    </div>
+    <div class="lang-eng" v-if="this.$store.state.swedish == false">
+      <h1>Contact</h1>
+      <p>Mobiltelefon: 073 - 951 78 83</p>
+      <p>E-post: e.axelsson@tutanota.com</p>
+      <p>linkedIn: ...</p>
+      <br />
+      <p>Address:</p>
+      <p>Östra Madvägen 15</p>
+      <p>226 50 Lund</p>
+    </div>
   </div>
 </template>
 

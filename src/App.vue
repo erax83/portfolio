@@ -4,9 +4,8 @@
       <div id="portfolio-heading">
         <h1>PORTFOLIO</h1>
         <h2>Erik Axelsson</h2>
-        
       </div>
-      <div>
+      <div id="flags">
         <img
           class="flag"
           id="swedish-flag"
@@ -23,9 +22,16 @@
         />
       </div>
       <div id="nav-menu">
-        <a href="#about-me">Om mig</a>
-        <a href="#projects">Projekt</a>
-        <a href="#contact">Kontakt</a>
+        <div v-if="this.$store.state.swedish == true">
+          <a href="#about-me">Om mig</a>
+          <a href="#projects">Projekt</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <div v-if="this.$store.state.swedish == false">
+          <a href="#about-me">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </nav>
     <main id="main-container">
@@ -44,21 +50,25 @@ import Contact from "@/components/Contact.vue";
 export default {
   name: "App",
   components: { About, Projects, Contact },
-  
+
   methods: {
     languageToSwedish: function () {
       if (this.$store.state.swedish == false) {
         this.$store.commit("changeLanguage");
-        document.getElementById("swedish-flag").style.filter = "brightness(100%)";
-        document.getElementById("brittish-flag").style.filter = "brightness(50%)";
+        document.getElementById("swedish-flag").style.filter =
+          "brightness(100%)";
+        document.getElementById("brittish-flag").style.filter =
+          "brightness(50%)";
       }
       console.log(this.$store.state.swedish);
     },
     languageToEnglish: function () {
       if (this.$store.state.swedish == true) {
         this.$store.commit("changeLanguage");
-        document.getElementById("brittish-flag").style.filter = "brightness(100%)";
-        document.getElementById("swedish-flag").style.filter = "brightness(50%)";
+        document.getElementById("brittish-flag").style.filter =
+          "brightness(100%)";
+        document.getElementById("swedish-flag").style.filter =
+          "brightness(50%)";
       }
       console.log(this.$store.state.swedish);
     },
@@ -78,8 +88,8 @@ export default {
 
 html,
 body {
-  max-width: 100%;
-  background: black;
+  /* max-width: 100%; */
+  background: white;
 }
 
 #app {
@@ -122,6 +132,7 @@ nav {
 
 #portfolio-heading {
   line-height: 0.7em;
+  display: inline-block;
 }
 
 nav a {
@@ -199,7 +210,7 @@ nav a:hover {
 
 @media only screen and (max-width: 900px) {
   nav {
-    width: 380px;
+    width: 420px;
   }
 
   nav a {
@@ -214,6 +225,14 @@ nav a:hover {
   .main-section {
     padding-top: 7em;
   }
+
+  #flags {
+    /* display: inline-block;
+    vertical-align: top; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,7 +240,7 @@ nav a:hover {
     top: 15px;
     left: 15px;
     padding: 4px 13px;
-    width: 330px;
+    width: 370px;
   }
 
   nav a {
@@ -235,6 +254,14 @@ nav a:hover {
 
   .main-section {
     padding-top: 5em;
+  }
+
+  #flags {
+    /* display: inline-block;
+    vertical-align: top; */
+    /* position: absolute;
+    top: 10px;
+    right: 12px; */
   }
 }
 </style>
