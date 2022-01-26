@@ -12,8 +12,8 @@
     </div>
     <div class="lang-eng" v-if="this.$store.state.swedish == false">
       <h1>Contact</h1>
-      <p>Mobiltelefon: 073 - 951 78 83</p>
-      <p>E-post: e.axelsson@tutanota.com</p>
+      <p>Mobile phone: 073 - 951 78 83</p>
+      <p>E-mail: e.axelsson@tutanota.com</p>
       <p>linkedIn: ...</p>
       <br />
       <p>Address:</p>
