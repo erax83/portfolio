@@ -109,9 +109,9 @@ main p {
   line-height: 1.7em;
 }
 
-p {
+/* p {
   font-size: 0.8em;
-}
+} */
 
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
@@ -146,9 +146,12 @@ nav {
   z-index: 1;
   top: 40px;
   left: 40px;
+  /* top: 5%;
+  left: 5%; */
   background: whitesmoke;
   overflow-x: hidden;
   padding: 13px 22px;
+  box-shadow: 0.3px 0.3px 1px grey;
 }
 
 #portfolio-heading {
@@ -162,11 +165,13 @@ nav a {
   font-size: 25px;
   /* color: hsl(20, 100%, 70%); */
   color: #064579;
+  /* color: hsl(20, 100%, 70%); */
 }
 
 nav a:hover {
   color: rgb(72, 160, 233);
   /* color: hsl(20, 100%, 70%); */
+  /* color: #064579; */
 }
 
 #main-container {
@@ -175,12 +180,17 @@ nav a:hover {
 
   /* position: relative; */
   /* width: 100%; */
+  margin-right: 30px;
   max-width: 30em;
   height: 100vh;
   scroll-behavior: smooth;
   overflow: auto;
   scroll-snap-type: y proximity;
   scroll-margin: 50px 0 50px 0;
+}
+
+#main-container p {
+  font-size: 0.8em;
 }
 
 .main-section {
@@ -244,6 +254,7 @@ nav a:hover {
   #main-container {
     padding-left: 70px;
     margin-left: 0px;
+    margin-right: 20px;
   }
 
   .main-section {
@@ -284,16 +295,26 @@ nav a:hover {
     margin-left: 0px;
   }
 
+  #main-container p {
+    font-size: 0.7em;
+  }
+
   .main-section {
     padding-top: 5em;
   }
+}
 
-  #flags {
-    /* display: inline-block;
-    vertical-align: top; */
-    /* position: absolute;
-    top: 10px;
-    right: 12px; */
+@media only screen and (max-width: 450px) {
+  nav a {
+    font-size: 1em;
+  }
+
+  nav {
+    width: 300px;
+  }
+
+  #main-container p {
+    font-size: 0.6em;
   }
 }
 </style>
