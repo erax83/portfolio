@@ -133,6 +133,10 @@ main p {
   padding: 0.4em;
 }
 
+.flag:hover {
+  cursor: pointer;
+}
+
 #swedish-flag {
   filter: brightness(100%);
 }
@@ -159,7 +163,7 @@ nav {
   display: inline-block;
 }
 
-nav a {
+a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -168,7 +172,7 @@ nav a {
   /* color: hsl(20, 100%, 70%); */
 }
 
-nav a:hover {
+a:hover {
   color: rgb(72, 160, 233);
   /* color: hsl(20, 100%, 70%); */
   /* color: #064579; */
@@ -278,7 +282,7 @@ nav a:hover {
     width: 370px;
   }
 
-  nav a {
+  a {
     font-size: 1.3em;
   }
 
@@ -305,7 +309,7 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 450px) {
-  nav a {
+  a {
     font-size: 1em;
   }
 
