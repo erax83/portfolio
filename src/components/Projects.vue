@@ -7,6 +7,11 @@
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
         </p>
+        <a
+          href="https://github.com/erax83/portfolio"
+          target="_blank"
+          >Besök Github repository</a
+        >
       </div>
       <br />
       <div>
@@ -18,8 +23,9 @@
         <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
           >Besök webbplats</a
         >
+        <br>
         <a
-          href="https://github.com/erax83/portfolio-our-recepies"
+          href="https://github.com/erax83/portfolio-weather-project"
           target="_blank"
           >Besök Github repository</a
         >
@@ -51,20 +57,47 @@
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
         </p>
+        <a
+          href="https://github.com/erax83/portfolio"
+          target="_blank"
+          >Visit Github repository</a
+        >
       </div>
+      <br />
       <div>
         <h2>Local Weather Report</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
           ratione.
         </p>
+        <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
+          >Visit webpage</a
+        >
+        <br>
+        <a
+          href="https://github.com/erax83/portfolio-weather-project"
+          target="_blank"
+          >Visit Github repository</a
+        >
       </div>
+      <br />
       <div>
-        <h2>???</h2>
+        <h2>Our Recepies</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
           enim?
         </p>
+
+        <a href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
+          >Visit webpage</a
+        >
+
+        <br />
+        <a
+          href="https://github.com/erax83/portfolio-our-recepies"
+          target="_blank"
+          >Visit Github repository</a
+        >
       </div>
     </div>
   </div>
