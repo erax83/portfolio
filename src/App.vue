@@ -306,6 +306,10 @@ a:hover {
   .main-section {
     padding-top: 5em;
   }
+
+  .project-component a {
+    font-size: 0.7em;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -318,6 +322,10 @@ a:hover {
   }
 
   #main-container p {
+    font-size: 0.6em;
+  }
+
+  .project-component a {
     font-size: 0.6em;
   }
 }

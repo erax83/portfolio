@@ -7,6 +7,7 @@
       <p>linkedIn: ...</p>
       <br />
       <p>Adress:</p>
+      <p>Erik Axelsson</p>
       <p>Östra Madvägen 15</p>
       <p>226 50 Lund</p>
     </div>
@@ -17,6 +18,7 @@
       <p>linkedIn: ...</p>
       <br />
       <p>Address:</p>
+      <p>Erik Axelsson</p>
       <p>Östra Madvägen 15</p>
       <p>226 50 Lund</p>
     </div>

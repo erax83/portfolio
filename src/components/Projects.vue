@@ -7,9 +7,7 @@
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
         </p>
-        <a
-          href="https://github.com/erax83/portfolio"
-          target="_blank"
+        <a href="https://github.com/erax83/portfolio" target="_blank"
           >Besök Github repository</a
         >
       </div>
@@ -23,7 +21,7 @@
         <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
           >Besök webbplats</a
         >
-        <br>
+        <br />
         <a
           href="https://github.com/erax83/portfolio-weather-project"
           target="_blank"
@@ -57,9 +55,7 @@
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, facere?
         </p>
-        <a
-          href="https://github.com/erax83/portfolio"
-          target="_blank"
+        <a href="https://github.com/erax83/portfolio" target="_blank"
           >Visit Github repository</a
         >
       </div>
@@ -73,7 +69,7 @@
         <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
           >Visit webpage</a
         >
-        <br>
+        <br />
         <a
           href="https://github.com/erax83/portfolio-weather-project"
           target="_blank"
@@ -88,7 +84,7 @@
           enim?
         </p>
 
-        <a href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
+        <a class="project-link" href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
           >Visit webpage</a
         >
 
@@ -109,14 +105,16 @@ export default {
 };
 </script>
 
-<style scoped>
-/* .card {
-  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  padding: 2px 16px;
+<style>
+@media only screen and (max-width: 900px) {
+  .project-link {
+    font-size: 1.3em;
+  }
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
+@media only screen and (max-width: 450px) {
+  a {
+    font-size: 1em;
+  }
+}
 </style>
