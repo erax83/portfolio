@@ -30,9 +30,14 @@
       <p>Regards</p>
     </div>
     <div id="name-and-pic">
-      <img id="small-portrait" v-if="!showModal" @click="showModal = true" src="@/assets/bildblocket.jpg" alt="me">
+      <img
+        id="small-portrait"
+        v-if="!showModal"
+        @click="showModal = true"
+        src="@/assets/bildblocket.jpg"
+        alt="me"
+      />
       <p>Erik</p>
-
     </div>
 
     <div class="modal-vue">
@@ -70,7 +75,7 @@ export default {
 /* h1 {
   font-size: 5em;;
 } */
- 
+
 #name-and-pic {
   line-height: 0em;
 }
@@ -78,6 +83,7 @@ export default {
 #small-portrait {
   width: 75px;
   border-radius: 0.3em;
+  align-content: center;
 }
 
 #small-portrait:hover {
@@ -105,5 +111,17 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-img {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .modal-img {
+    width: 150px;
+  }
 }
 </style>
