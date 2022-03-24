@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- Menu. -->
     <nav>
       <div id="portfolio-heading">
         <h1>PORTFOLIO</h1>
@@ -34,6 +35,7 @@
         </div>
       </div>
     </nav>
+    <!-- Content components. -->
     <main id="main-container">
       <div class="main-section" id="about-me"><About /></div>
       <div class="main-section" id="projects"><Projects /></div>
@@ -52,6 +54,7 @@ export default {
   components: { About, Projects, Contact },
 
   methods: {
+    // Change language to swedish.
     languageToSwedish: function () {
       if (this.$store.state.swedish == false) {
         this.$store.commit("changeLanguage");
@@ -62,6 +65,7 @@ export default {
       }
       console.log(this.$store.state.swedish);
     },
+    // Change language to english.
     languageToEnglish: function () {
       if (this.$store.state.swedish == true) {
         this.$store.commit("changeLanguage");
@@ -77,25 +81,16 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 
 html,
 body {
-  /* max-width: 100%; */
   background: white;
 }
 
 main h1 {
   font-size: 2em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  /* -webkit-text-stroke: 0.01px black; */
   color: white;
   filter: blur(0.4px);
 }
@@ -109,23 +104,10 @@ main p {
   line-height: 1.7em;
 }
 
-/* p {
-  font-size: 0.8em;
-} */
-
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: "Source Sans Pro", sans-serif;
-  /* font-family: 'Ubuntu Mono', monospace; */
-  /* font-family: 'Dongle', sans-serif; */
-  /* font-family: 'Share Tech Mono', monospace; */
-  /* font-family: 'Cousine', monospace; */
-  font-family: "Overpass Mono", monospace;
-  /* font-family: 'Spinnaker', sans-serif; */
   font-family: "Fira Code", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* max-width: 1500px; */
 }
 
 .flag {
@@ -150,8 +132,6 @@ nav {
   z-index: 1;
   top: 40px;
   left: 40px;
-  /* top: 5%;
-  left: 5%; */
   background: whitesmoke;
   overflow-x: hidden;
   padding: 13px 22px;
@@ -167,23 +147,15 @@ a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  /* color: hsl(20, 100%, 70%); */
   color: #064579;
-  /* color: hsl(20, 100%, 70%); */
 }
 
 a:hover {
   color: rgb(72, 160, 233);
-  /* color: hsl(20, 100%, 70%); */
-  /* color: #064579; */
 }
 
 #main-container {
   font-size: 28px;
-  /* padding: 0px 10px; */
-
-  /* position: relative; */
-  /* width: 100%; */
   margin-right: 30px;
   max-width: 30em;
   height: 100vh;
@@ -205,26 +177,6 @@ a:hover {
   scroll-snap-align: start;
   padding-top: 20%;
 }
-
-/* .main-section:nth-child(1) {
-  background: #ff9966;
-} */
-
-/* .main-section:nth-child(2) {
-  background: blue;
-}
-
-.main-section:nth-child(3) {
-  background: black;
-  color: white;
-} */
-
-/* @media only screen and (min-width: 1200px) {
-  html,
-  body {
-    padding-left: 10%;
-  }
-} */
 
 @media only screen and (min-width: 901px) {
   nav {
@@ -266,8 +218,6 @@ a:hover {
   }
 
   #flags {
-    /* display: inline-block;
-    vertical-align: top; */
     position: absolute;
     top: 20px;
     right: 20px;

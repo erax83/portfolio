@@ -1,3 +1,4 @@
+<!-- Introduction text and modal picture -->
 <template>
   <div class="about-component">
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
@@ -41,14 +42,9 @@
     </div>
 
     <div class="modal-vue">
-      <!-- button show -->
-      <!-- <button v-if="!showModal" @click="showModal = true">show</button> -->
-      <!-- <img class="small-img" v-if="!showModal" @click="showModal = true" src="@/assets/bildblocket.jpg" alt="me"> -->
-      <!-- overlay -->
       <div class="overlay" v-if="showModal" @click="showModal = false"></div>
       <!-- modal -->
       <div class="modal" v-if="showModal">
-        <!-- <button class="close" @click="showModal = false">x</button> -->
         <img
           class="modal-img"
           @click="showModal = false"
@@ -72,10 +68,6 @@ export default {
 </script>
 
 <style scoped>
-/* h1 {
-  font-size: 5em;;
-} */
-
 #name-and-pic {
   line-height: 0em;
 }

@@ -1,3 +1,4 @@
+<!-- Projects with descriptions and links. -->
 <template>
   <div class="project-component">
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
@@ -84,7 +85,10 @@
           enim?
         </p>
 
-        <a class="project-link" href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
+        <a
+          class="project-link"
+          href="https://portfolio-our-recepies.herokuapp.com/"
+          target="_blank"
           >Visit webpage</a
         >
 

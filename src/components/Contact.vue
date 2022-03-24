@@ -1,3 +1,4 @@
+<!-- Contact information -->
 <template>
   <div class="contact-component">
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
