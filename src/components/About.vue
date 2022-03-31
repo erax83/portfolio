@@ -4,30 +4,23 @@
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
       <h1>Om mig</h1>
       <p>
-        Sommaren 2021 gick jag ut en två-årig IT-utbildning(Fullstack
-        Webutvecklare) på Chas Academy i Stockholm. Under utbildningen har jag
-        studerat front- och backendprogrammering, programmeringsmetodik,
-        projektmetodik samt UX och Design. Utöver HTML och CSS har det
-        huvudsakliga fokuset legat på Javascript, inklusive Node och dess olika
-        ramverk. Vue har blivit det ramverk som jag försökt specialisera mig
-        inom efter utbildningens slut. Vi använde oss även av PHP och Wordpress.
-        Och när jag förberedde mig för utbildningen har jag även provar på C#,
-        Java och Python.
+        Hej, jag heter Erik Axelsson och jag examinerade sommaren 2021 från
+        utbildningen Fullstack Webbutvecklare på Chas Academy i Stockholm. Den
+        här portfolion är tänkt att på ett enkelt vis redovisa för mina
+        kunskaper i olika typer av programmeringstekniker och design.
       </p>
+      <br />
       <p>Hälsningar</p>
     </div>
     <div class="lang-eng" v-if="this.$store.state.swedish == false">
       <h1>About me</h1>
       <p>
-        In the summer of 2021 I completed a two-year IT education (Fullstack Web
-        developer) at Chas Academy in Stockholm. During the training I have
-        studied front and backend programming, programming methodology, project
-        methodology and UX and Design. In addition to HTML and CSS, the main
-        focus has been on Javascript, including Node and its various frameworks.
-        Vue has become the framework I have tried to specialize in after the end
-        of the education. We also used PHP and Wordpress. And when I prepared
-        for the training I have also tried on C #, Java and Python.
+        Hello, my name is Erik Axelsson and I graduated in the summer of 2021
+        from the education Fullstack Web Developer at Chas Academy in Stockholm.
+        This portfolio is meant to account for my knowledge of different types
+        of programming techniques and design.
       </p>
+      <br />
       <p>Regards</p>
     </div>
     <div id="name-and-pic">
