@@ -4,7 +4,7 @@
     <div class="lang-swe" v-if="this.$store.state.swedish == true">
       <h1>Projekt</h1>
       <p>
-        Här följer en beskrivning av de olika projekten och de tekniker som
+        Här följer beskrivningar av de olika projekten och de tekniker som
         använts samt länkar till projekt och källkod. Gemensamt för samtliga
         projekt är att de är responsivt designade och att javascript och
         ramverket Vue har använts.
@@ -50,8 +50,9 @@
           att lägga till, uppdatera och ta bort recept. Detta är en
           fullstackapplication skapad med Vue-ramverket Nuxt. Backenddelen är
           skriven med node och express och följer en MVC-struktur. Mongo DB
-          används till databasen. För att testa att logga in utan att skapa ett
-          nytt konto går det bra att logga in via
+          används till databasen. För att testa applikationen utan att skapa ett
+          nytt konto går det bra att logga in med mejladressen
+          testy@testsson.com och lösenordet testytestsson.
         </p>
 
         <a href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
@@ -114,7 +115,9 @@
           A CRUD API allows users to add, update and delete recipes. This is a
           full stack application created with the Vue framework Nuxt. The
           backend is written with node and express and follows an MVC structure.
-          Mongo DB is used for the database. Log in...
+          Mongo DB is used for the database. To use the application without
+          creating a new account you can log in with mail address
+          testy@testsson.com and password testytestsson.
         </p>
 
         <a href="https://portfolio-our-recepies.herokuapp.com/" target="_blank"
