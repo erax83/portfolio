@@ -5,7 +5,7 @@
       <h1>Kontakt</h1>
       <p>Mobiltelefon: 073 - 951 78 83</p>
       <p>E-post: e.axelsson@tutanota.com</p>
-      <p>linkedIn: ...</p>
+      <p>linkedIn: https://www.linkedin.com/in/erik-axelsson-13a798236/</p>
       <br />
       <p>Adress:</p>
       <p>Erik Axelsson</p>
@@ -16,7 +16,7 @@
       <h1>Contact</h1>
       <p>Mobile phone: 073 - 951 78 83</p>
       <p>E-mail: e.axelsson@tutanota.com</p>
-      <p>linkedIn: ...</p>
+      <p>linkedIn: https://www.linkedin.com/in/erik-axelsson-13a798236/</p>
       <br />
       <p>Address:</p>
       <p>Erik Axelsson</p>

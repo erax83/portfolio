@@ -15,7 +15,7 @@
         <p>
           Webbplatsen du besöker just nu. Menyn är fixed och är designad med ett
           responsivt tänk. En porträttbild går att förstora med modalteknik.
-          Global statehantering(Vuex) används för att skifta mellan svenska och
+          Global statehantering (Vuex) används för att skifta mellan svenska och
           engelska.
         </p>
         <a href="https://github.com/erax83/portfolio" target="_blank"

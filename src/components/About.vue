@@ -15,10 +15,10 @@
     <div class="lang-eng" v-if="this.$store.state.swedish == false">
       <h1>About me</h1>
       <p>
-        Hello, my name is Erik Axelsson and I graduated in the summer of 2021
-        from the education Fullstack Web Developer at Chas Academy in Stockholm.
-        This portfolio is meant to account for my knowledge of different types
-        of programming techniques and design.
+        Hello, my name is Erik Axelsson. In the summer of 2021 I graduated from
+        the education Fullstack Web Developer at Chas Academy in Stockholm. This
+        portfolio is meant to account for my knowledge of different types of
+        programming techniques and design.
       </p>
       <br />
       <p>Regards</p>
@@ -28,7 +28,7 @@
         id="small-portrait"
         v-if="!showModal"
         @click="showModal = true"
-        src="@/assets/bildblocket.jpg"
+        src="@/assets/jag-lappland.jpg"
         alt="me"
       />
       <p>Erik</p>
@@ -41,7 +41,7 @@
         <img
           class="modal-img"
           @click="showModal = false"
-          src="@/assets/bildblocket.jpg"
+          src="@/assets/jag-lappland.jpg"
           alt="me"
         />
       </div>
