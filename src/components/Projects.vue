@@ -5,9 +5,8 @@
       <h1>Projekt</h1>
       <p>
         Här följer beskrivningar av de olika projekten och de tekniker som
-        använts samt länkar till projekt och källkod. Gemensamt för samtliga
-        projekt är att de är responsivt designade och att javascript och
-        ramverket Vue har använts.
+        använts samt länkar till projekt och källkod. I samtliga projekt används
+        responsiv design.
       </p>
       <br />
       <div>
@@ -16,7 +15,7 @@
           Webbplatsen du besöker just nu. Menyn är fixed och är designad med ett
           responsivt tänk. En porträttbild går att förstora med modalteknik.
           Global statehantering (Vuex) används för att skifta mellan svenska och
-          engelska.
+          engelska. Skapad med Vue.
         </p>
         <a href="https://github.com/erax83/portfolio" target="_blank"
           >Besök Github repository</a
@@ -28,7 +27,7 @@
         <p>
           En väderapplikation som visar användarens lokala väder med hjälp av
           API:et Geolocation. Ett externt API (Open Weather) används för att
-          hämta väderdata.
+          hämta väderdata. Skapad med Vue.
         </p>
         <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
           >Besök webbplats</a
@@ -66,23 +65,29 @@
           >Besök Github repository</a
         >
       </div>
+      <br />
+      <div>
+        <h2>The Party District</h2>
+        <p>En webbplats för ett krog/nöjes-koncept. Skapad med Wordpress.</p>
+        <a href="https://eraxwp.wpcomstaging.com/" target="_blank"
+          >Besök webbplats</a
+        >
+      </div>
     </div>
     <div class="lang-eng" v-if="this.$store.state.swedish == false">
       <h1>Projects</h1>
       <p>
         Here follows a description of the projects and the techniques used as
-        well as links to the projects webbpages and source code. The projects
-        have in common that they all include javascript and that they take use
-        of responsive design and the framework Vue.
+        well as links to the projects webbpages and source code. All projects
+        take use of responsive design.
       </p>
       <br />
       <div>
         <h2>Portfolio</h2>
         <p>
-          The website you are currently visiting. The menu is fixed and is
-          designed with responsive design in mind. A portrait image can be
+          The website you are currently visiting. A portrait image can be
           enlarged with modal technique. Global state management (Vuex) is used
-          to switch between Swedish and English.
+          to switch between Swedish and English. Made with Vue.
         </p>
         <a href="https://github.com/erax83/portfolio" target="_blank"
           >Visit Github repository</a
@@ -94,7 +99,7 @@
         <p>
           A weather application that shows the user's local weather by utelizing
           the Geolocation API. An external API (Open Weather) is used to fetch
-          weather data.
+          weather data. Made with Vue.
         </p>
         <a href="https://optimistic-pasteur-847c15.netlify.app/" target="_blank"
           >Visit webpage</a
@@ -129,6 +134,14 @@
           href="https://github.com/erax83/portfolio-our-recepies"
           target="_blank"
           >Visit Github repository</a
+        >
+      </div>
+      <br />
+      <div>
+        <h2>The Party District</h2>
+        <p>A website made for a nightlife concept. Made in wordpress</p>
+        <a href="https://eraxwp.wpcomstaging.com/" target="_blank"
+          >Visit webpage</a
         >
       </div>
     </div>
