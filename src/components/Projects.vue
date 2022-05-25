@@ -68,7 +68,11 @@
       <br />
       <div>
         <h2>The Party District</h2>
-        <p>En webbplats för ett krog/nöjes-koncept. Skapad med Wordpress.</p>
+        <p>
+          En webbplats för ett krog/nöjes-koncept. Webbplatsen innehåller
+          parallax samt flera andra typer av visuella effekter. Skapad med
+          Wordpress.
+        </p>
         <a href="https://eraxwp.wpcomstaging.com/" target="_blank"
           >Besök webbplats</a
         >
@@ -139,7 +143,10 @@
       <br />
       <div>
         <h2>The Party District</h2>
-        <p>A website made for a nightlife concept. Made in wordpress</p>
+        <p>
+          A website made for a nightlife concept. Parallax is used as well as
+          other types of visual effects. Made in wordpress.
+        </p>
         <a href="https://eraxwp.wpcomstaging.com/" target="_blank"
           >Visit webpage</a
         >
