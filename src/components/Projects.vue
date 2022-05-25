@@ -145,7 +145,7 @@
         <h2>The Party District</h2>
         <p>
           A website made for a nightlife concept. Parallax is used as well as
-          other types of visual effects. Include blog-like news section. Made in
+          other types of visual effects. Includes a blog-like news section. Made in
           wordpress.
         </p>
         <a href="https://eraxwp.wpcomstaging.com/" target="_blank"
